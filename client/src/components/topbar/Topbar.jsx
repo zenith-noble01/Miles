@@ -3,6 +3,7 @@ import { Search, Person, Chat, Notifications } from "@material-ui/icons";
 import { Link } from "react-router-dom";
 import { useContext } from "react";
 import { AuthContext } from "../../context/AuthContext";
+// import miles from '../images/mm.png'
 
 export default function Topbar() {
   const { user } = useContext(AuthContext);
@@ -11,7 +12,7 @@ export default function Topbar() {
     <div className="topbarContainer">
       <div className="topbarLeft">
         <Link to="/" style={{ textDecoration: "none" }}>
-          img
+          {/* <img src={miles} className="zed"/> */}
           <span className="logo">Miles</span>
         </Link>
       </div>
@@ -35,7 +36,9 @@ export default function Topbar() {
             <span className="topbarIconBadge">1</span>
           </div>
           <div className="topbarIconItem">
-            <Chat />
+            <Link to="/messenger">
+              <Chat />
+            </Link>
             <span className="topbarIconBadge">2</span>
           </div>
           <div className="topbarIconItem">

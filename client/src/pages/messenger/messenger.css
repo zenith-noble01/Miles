@@ -58,3 +58,35 @@ textarea {
   color: white;
   border-radius: 8px;
 }
+
+.noChatSelected {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  height: 100%;
+  width: 100%;
+}
+
+/* .miles {
+  background: green;
+} */
+
+.miles img {
+  width: 75px;
+  margin-left: 5px;
+}
+
+.miles span {
+  position: absolute;
+  font-size: 30px;
+  font-weight: 900;
+  top: 60%;
+  margin-left: 5px;
+  left: 0;
+}
+
+.infoText {
+  font-size: 25px;
+  font-weight: 400;
+}
